@@ -12,7 +12,7 @@
 
 body {
     margin: 0;
-    background: var(--bg);
+    background-image: url(media/macandcheesebg.jpg);
     color: var(--text);
     font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -24,11 +24,18 @@ a:hover { text-decoration: underline; }
 
 .header {
     text-align: center;
-    padding: 60px 20px 20px;
+    padding: 40px 10px 10px;
+    margin: 50px auto 30px;
+    max-width: 700px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    
 }
 
-.blog-title { color: var(--title); margin: 0 0 6px; font-size: 32px; font-weight: 700; }
-.description { color: var(--title); opacity: .85; font-size: 15px; }
+.blog-title { color: var(--card); margin: 0 0 6px; font-size: 32px; font-weight: 700; }
+.description { color: var(--card); opacity: .85; font-size: 15px; margin: 0; }
 
 #posts .container {
     width: 100%;
@@ -65,6 +72,7 @@ article.post p { margin: 0 0 14px; font-size: 15px; word-wrap: break-word; }
 article.post figure { margin: 0 0 14px; }
 article.post figure.full { margin: 0; }                 
 article.post img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+
 
 
 @media (max-width: 700px) {
